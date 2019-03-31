@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# encoding: UTF-8
+
+require 'avoid'
+
+begin
+  Avoid.from_cmdline(ARGV)
+rescue => e
+  abort e.message
+end
+
